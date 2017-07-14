@@ -26,10 +26,10 @@ class ProductsGridViewModelTests: XCTestCase {
     }
     
     func testThatItReturnsTheCorrectNumberOfSections() {
-        
+        XCTAssertEqual(viewModel.numberOfSections(), 1)
     }
     
     func testThatItReturnsTheCorrectNumberOfItemsInSection() {
-        
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0), 5)
     }
 }
