@@ -10,4 +10,9 @@ import Foundation
 
 struct ProductsGridViewModel {
     
+    private var networkAdapter: ProductsNetworkAdapter
+    
+    init(networkAdapter: ProductsNetworkAdapter = ProductsNetworkAdapter()) {
+        self.networkAdapter = networkAdapter
+    }
 }

@@ -7,13 +7,21 @@
 //
 
 import XCTest
+@testable import JohnLewis
 
 class ProductsGridViewModelTests: XCTestCase {
+    
+    var viewModel: ProductsGridViewModel!
     
     override func setUp() {
         super.setUp()
         
+        let mockNetwork = MockNetworkManager()
+        let networkAdapter = ProductsNetworkAdapter(networkManager: mockNetwork)
+        viewModel = ProductsGridViewModel(networkAdapter: networkAdapter)
     }
     
-    
+    func testThatItReturnsTheCorrectTitle() {
+        
+    }
 }
