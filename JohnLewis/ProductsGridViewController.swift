@@ -11,6 +11,7 @@ import UIKit
 class ProductsGridViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, ProductsGridViewModelProtocol {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var error: Error?
     var viewModel = ProductsGridViewModel()
     
     override func viewDidLoad() {
@@ -41,6 +42,7 @@ class ProductsGridViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func errorOccured(error: Error) {
-        
+        // Can handle this properly, but just store it for testing purposes
+        self.error = error
     }
 }

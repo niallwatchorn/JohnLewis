@@ -44,6 +44,13 @@ struct MockNetworkManager: NetworkManagerProtocol {
             ["productId" : "3", "price" : ["now" : "329.00", "currency" : "GBP"], "title" : "Samsung AX300", "image" : "//johnlewis.scene7.com/is/image/JohnLewis/234326372?"],
             ["productId" : "4", "price" : ["now" : "179.00", "currency" : "GBP"], "title" : "Samsung AX400", "image" : "//johnlewis.scene7.com/is/image/JohnLewis/234326372?"],
             ["productId" : "5", "price" : ["now" : "449.00", "currency" : "GBP"], "title" : "Samsung AX500", "image" : "//johnlewis.scene7.com/is/image/JohnLewis/234326372?"]
-        ]]
+            ]]
+    }
+}
+
+struct MockErrorNetworkManager: NetworkManagerProtocol {
+    
+    func makeRequest(request: URLRequest, completion: @escaping ([String : Any]?, Error?) -> Void) {
+        completion(nil, NetworkError.nilData)
     }
 }

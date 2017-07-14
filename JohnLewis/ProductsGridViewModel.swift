@@ -21,8 +21,9 @@ class ProductsGridViewModel {
     
     weak var delegate: ProductsGridViewModelProtocol?
     
-    init(networkAdapter: ProductsNetworkAdapter = ProductsNetworkAdapter()) {
+    init(networkAdapter: ProductsNetworkAdapter = ProductsNetworkAdapter(), delegate: ProductsGridViewModelProtocol? = nil) {
         self.networkAdapter = networkAdapter
+        self.delegate = delegate
         
         networkAdapter.getListOfProducts { (dishwashers, error) in
             if let error = error {
