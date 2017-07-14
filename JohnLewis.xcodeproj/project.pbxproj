@@ -18,6 +18,8 @@
 		395C0A001F18FB1E0067936F /* Dishwasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C09FF1F18FB1E0067936F /* Dishwasher.swift */; };
 		395C0A021F18FBA40067936F /* ProductsNetworkAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A011F18FBA40067936F /* ProductsNetworkAdapterTests.swift */; };
 		395C0A041F1905270067936F /* DishwasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A031F1905270067936F /* DishwasherTests.swift */; };
+		395C0A061F1906640067936F /* ProductsGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A051F1906640067936F /* ProductsGridViewModel.swift */; };
+		395C0A0A1F19072C0067936F /* ProductsGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */; };
 		7C85BB84D91EAE41331BE828 /* Pods_JohnLewis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E12C7F54CDA2E6DDE4CF4A /* Pods_JohnLewis.framework */; };
 		A22C6B85F8758FCBFC945456 /* Pods_JohnLewisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9A194DDB2B69E67E7A9F2 /* Pods_JohnLewisTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		395C09FF1F18FB1E0067936F /* Dishwasher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dishwasher.swift; sourceTree = "<group>"; };
 		395C0A011F18FBA40067936F /* ProductsNetworkAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsNetworkAdapterTests.swift; sourceTree = "<group>"; };
 		395C0A031F1905270067936F /* DishwasherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishwasherTests.swift; sourceTree = "<group>"; };
+		395C0A051F1906640067936F /* ProductsGridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModel.swift; sourceTree = "<group>"; };
+		395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModelTests.swift; sourceTree = "<group>"; };
 		3A7D9BCBB337C9158E12EA07 /* Pods-JohnLewisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.release.xcconfig"; sourceTree = "<group>"; };
 		48E12C7F54CDA2E6DDE4CF4A /* Pods_JohnLewis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA15458CC3E76CF444B92A7 /* Pods-JohnLewisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				395C09EB1F18F8070067936F /* Info.plist */,
 				395C09F71F18F9580067936F /* ProductsGridViewControllerTests.swift */,
 				395C0A011F18FBA40067936F /* ProductsNetworkAdapterTests.swift */,
+				395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */,
 				395C0A031F1905270067936F /* DishwasherTests.swift */,
 				395C09F61F18F9580067936F /* JohnLewisTests-Bridging-Header.h */,
 			);
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				395C09D61F18F8060067936F /* ProductsGridViewController.swift */,
+				395C0A051F1906640067936F /* ProductsGridViewModel.swift */,
 				395C09FE1F18FB0A0067936F /* Models */,
 				395C09F91F18FA570067936F /* Network */,
 			);
@@ -382,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395C0A061F1906640067936F /* ProductsGridViewModel.swift in Sources */,
 				395C09FB1F18FA6E0067936F /* NetworkManager.swift in Sources */,
 				395C0A001F18FB1E0067936F /* Dishwasher.swift in Sources */,
 				395C09D71F18F8060067936F /* ProductsGridViewController.swift in Sources */,
@@ -394,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395C0A0A1F19072C0067936F /* ProductsGridViewModelTests.swift in Sources */,
 				395C0A021F18FBA40067936F /* ProductsNetworkAdapterTests.swift in Sources */,
 				395C09F81F18F9580067936F /* ProductsGridViewControllerTests.swift in Sources */,
 				395C0A041F1905270067936F /* DishwasherTests.swift in Sources */,
