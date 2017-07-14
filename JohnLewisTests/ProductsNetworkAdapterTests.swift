@@ -24,6 +24,9 @@ class ProductsNetworkAdapterTests: XCTestCase {
             XCTAssertNil(error)
             XCTAssertNotNil(dishwashers)
             XCTAssertEqual(dishwashers?.count, 5)
+            
+            XCTAssertEqual(dishwashers?.first?.title, "Samsung AX100")
+            XCTAssertEqual(dishwashers?.first?.price.now, "225.00")
         }
     }
 }

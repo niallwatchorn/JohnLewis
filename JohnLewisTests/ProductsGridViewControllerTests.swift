@@ -7,12 +7,42 @@
 //
 
 import XCTest
+@testable import JohnLewis
 
 class ProductsGridViewControllerTests: XCTestCase {
     
+    var viewController: ProductsGridViewController!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        viewController = storyboard.instantiateViewController(withIdentifier: "ProductsGridViewController") as! ProductsGridViewController
+        _ = viewController.view
     }
     
+    func testThatItSetsUpCorrectly() {
+        XCTAssertEqual(viewController.numberOfSections(in: viewController.collectionView), 1)
+        XCTAssertEqual(viewController.collectionView(viewController.collectionView, numberOfItemsInSection: 0), 0)
+    }
+    
+    func testThatItReloadsDataCorrectly() {
+        let networkAdapter = ProductsNetworkAdapter(networkManager: MockNetworkManager())
+        viewController.viewModel = ProductsGridViewModel(networkAdapter: networkAdapter)
+        viewController.viewModel.delegate = viewController
+        
+        XCTAssertEqual(viewController.numberOfSections(in: viewController.collectionView), 1)
+        XCTAssertEqual(viewController.collectionView(viewController.collectionView, numberOfItemsInSection: 0), 5)
+    }
+    
+    func testThatItCorrectlySetsUpCells() {
+        let networkAdapter = ProductsNetworkAdapter(networkManager: MockNetworkManager())
+        viewController.viewModel = ProductsGridViewModel(networkAdapter: networkAdapter)
+        viewController.viewModel.delegate = viewController
+        
+        let cell = viewController.collectionView(viewController.collectionView, cellForItemAt: IndexPath(row: 0, section: 0)) as! ProductGridCell
+        
+        XCTAssertEqual(cell.titleLabel.text, "Samsung AX100")
+        XCTAssertEqual(cell.priceLabel.text, "£225.00")
+    }
 }

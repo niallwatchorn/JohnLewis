@@ -6,7 +6,8 @@
 //  Copyright © 2017 EpiTech. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SDWebImage
 
 protocol ProductsGridViewModelProtocol: class {
     func reloadData()
@@ -50,5 +51,19 @@ class ProductsGridViewModel {
     
     func numberOfItemsInSection(_ section: Int) -> Int {
         return dishwashers.count
+    }
+    
+    func cellForItemAtIndexPath(_ indexPath: IndexPath, collectionView: UICollectionView) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductGridCell", for: indexPath) as? ProductGridCell else {
+            fatalError("Unable to dequeue ProductGridCell")
+        }
+        
+        let dishwasher = dishwashers[indexPath.row]
+        
+        cell.imageView.sd_setImage(with: URL(string: dishwasher.image))
+        cell.titleLabel.text = dishwasher.title
+        cell.priceLabel.text = "£" + dishwasher.price.now
+        
+        return cell
     }
 }
