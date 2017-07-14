@@ -15,4 +15,8 @@ struct ProductsGridViewModel {
     init(networkAdapter: ProductsNetworkAdapter = ProductsNetworkAdapter()) {
         self.networkAdapter = networkAdapter
     }
+    
+    func title() -> String {
+        return "Dishwashers"
+    }
 }

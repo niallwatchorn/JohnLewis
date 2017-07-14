@@ -10,10 +10,11 @@ import UIKit
 
 class ProductsGridViewController: UIViewController {
 
+    private let viewModel = ProductsGridViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = viewModel.title()
     }
-
-    
 }

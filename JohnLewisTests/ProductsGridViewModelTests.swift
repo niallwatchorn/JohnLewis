@@ -22,6 +22,6 @@ class ProductsGridViewModelTests: XCTestCase {
     }
     
     func testThatItReturnsTheCorrectTitle() {
-        
+        XCTAssertEqual(viewModel.title(), "Dishwashers")
     }
 }
