@@ -14,4 +14,8 @@ class ProductsNetworkAdapter {
     init(networkManager: NetworkManagerProtocol = NetworkManager()) {
         self.networkManager = networkManager
     }
+    
+    func getListOfProducts(_ completion: @escaping ([Dishwasher]?, Error?) -> Void) {
+        
+    }
 }
