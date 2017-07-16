@@ -40,5 +40,6 @@ class NetworkManager: NetworkManagerProtocol {
 
 enum NetworkError: Error {
     case nilData
+    case nilJSON
     case productsNotFound
 }

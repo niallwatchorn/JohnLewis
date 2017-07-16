@@ -11,6 +11,7 @@ import UIKit
 class ProductsGridViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, ProductsGridViewModelProtocol {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    private var productId = ""
     var error: Error?
     var viewModel = ProductsGridViewModel()
     
@@ -34,6 +35,11 @@ class ProductsGridViewController: UIViewController, UICollectionViewDelegate, UI
         return viewModel.cellForItemAtIndexPath(indexPath, collectionView: collectionView)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        productId = viewModel.productIdForItemAtIndex(indexPath.row)
+        performSegue(withIdentifier: "showProductDetailsSegue", sender: nil)
+    }
+    
     // MARK: ProductsGridViewModelDelegate methods
     func reloadData() {
         DispatchQueue.main.async {
@@ -44,5 +50,13 @@ class ProductsGridViewController: UIViewController, UICollectionViewDelegate, UI
     func errorOccured(error: Error) {
         // Can handle this properly, but just store it for testing purposes
         self.error = error
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? ProductDetailsViewController else {
+            return
+        }
+        destination.productId = productId
     }
 }

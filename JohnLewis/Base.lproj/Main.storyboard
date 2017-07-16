@@ -91,11 +91,30 @@
                     <navigationItem key="navigationItem" id="plN-A7-TKP"/>
                     <connections>
                         <outlet property="collectionView" destination="kDv-q6-gmQ" id="80b-ao-AV1"/>
+                        <segue destination="4El-Y1-xqE" kind="show" identifier="showProductDetailsSegue" id="qzN-dG-OEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdg-Fo-LrU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820.3125" y="-548.4375"/>
+        </scene>
+        <!--Product Details View Controller-->
+        <scene sceneID="r10-5j-21e">
+            <objects>
+                <viewController id="4El-Y1-xqE" customClass="ProductDetailsViewController" customModule="JohnLewis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6bx-cP-e9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="jdb-KZ-ldo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zKv-zY-4Eq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gym-3u-UUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2594" y="-548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="86s-OS-d4w">

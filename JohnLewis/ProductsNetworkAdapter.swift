@@ -16,7 +16,7 @@ class ProductsNetworkAdapter {
     }
     
     func getListOfProducts(_ completion: @escaping ([Dishwasher]?, Error?) -> Void) {
-        guard let url = Strings.url else {
+        guard let url = URL(string:Strings.baseURL + Strings.searchURL + "&" + Strings.apiKey + Strings.pageSize) else {
             completion(nil, nil)
             return
         }
@@ -38,8 +38,31 @@ class ProductsNetworkAdapter {
             }
         }
     }
+    
+    func getProductWithId(_ id: String, _ completion: @escaping (Dishwasher?, Error?) -> Void) {
+        guard let url = URL(string: Strings.baseURL + id + "?" + Strings.apiKey) else {
+            completion(nil, nil)
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        networkManager.makeRequest(request: request) { (json, error) in
+            if error != nil {
+                completion(nil, error)
+            } else {
+                if let json = json {
+                    completion(Dishwasher(json: json), nil)
+                } else {
+                    completion(nil, NetworkError.nilJSON)
+                }
+            }
+        }
+    }
 }
 
 fileprivate struct Strings {
-    static let url = URL(string: "https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20")
+    static let baseURL = "https://api.johnlewis.com/v1/products/"
+    static let searchURL = "search?q=dishwasher"
+    static let apiKey = "key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb"
+    static let pageSize = "&pageSize=20"
 }

@@ -67,4 +67,8 @@ class ProductsGridViewModel {
         
         return cell
     }
+    
+    func productIdForItemAtIndex(_ index: Int) -> String {
+        return dishwashers[index].productId
+    }
 }
