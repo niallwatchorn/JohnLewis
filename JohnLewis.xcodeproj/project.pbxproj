@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390C59881F1BA92000ED01BD /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C59871F1BA92000ED01BD /* ProductDetailsViewController.swift */; };
+		390C598A1F1BCFCD00ED01BD /* ProductImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C59891F1BCFCD00ED01BD /* ProductImageCell.swift */; };
 		395C09D51F18F8060067936F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C09D41F18F8060067936F /* AppDelegate.swift */; };
 		395C09D71F18F8060067936F /* ProductsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C09D61F18F8060067936F /* ProductsGridViewController.swift */; };
 		395C09DA1F18F8060067936F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395C09D81F18F8060067936F /* Main.storyboard */; };
@@ -23,6 +24,11 @@
 		395C0A0A1F19072C0067936F /* ProductsGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */; };
 		395C0A0D1F190CBB0067936F /* ProductGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C0A0C1F190CBB0067936F /* ProductGridCell.swift */; };
 		398DE7B71F19105D00FF8F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395C09D81F18F8060067936F /* Main.storyboard */; };
+		39F8A9FE1F1BDC5100048C7D /* ProductPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8A9FD1F1BDC5100048C7D /* ProductPriceCell.swift */; };
+		39F8AA001F1BE16A00048C7D /* ProductInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8A9FF1F1BE16A00048C7D /* ProductInformationCell.swift */; };
+		39F8AA021F1BE39500048C7D /* ProductSpecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8AA011F1BE39500048C7D /* ProductSpecCell.swift */; };
+		39F8AA041F1BE4F600048C7D /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8AA031F1BE4F600048C7D /* SectionHeaderCell.swift */; };
+		39F8AA061F1BE75900048C7D /* ProductDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8AA051F1BE75800048C7D /* ProductDetailsViewControllerTests.swift */; };
 		7C85BB84D91EAE41331BE828 /* Pods_JohnLewis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E12C7F54CDA2E6DDE4CF4A /* Pods_JohnLewis.framework */; };
 		A22C6B85F8758FCBFC945456 /* Pods_JohnLewisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9A194DDB2B69E67E7A9F2 /* Pods_JohnLewisTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +47,7 @@
 		20EEA1CB6E9604155D158751 /* Pods-JohnLewis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewis/Pods-JohnLewis.debug.xcconfig"; sourceTree = "<group>"; };
 		23E9A194DDB2B69E67E7A9F2 /* Pods_JohnLewisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		390C59871F1BA92000ED01BD /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		390C59891F1BCFCD00ED01BD /* ProductImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductImageCell.swift; sourceTree = "<group>"; };
 		395C09D11F18F8060067936F /* JohnLewis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnLewis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395C09D41F18F8060067936F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		395C09D61F18F8060067936F /* ProductsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsGridViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +67,11 @@
 		395C0A051F1906640067936F /* ProductsGridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModel.swift; sourceTree = "<group>"; };
 		395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewModelTests.swift; sourceTree = "<group>"; };
 		395C0A0C1F190CBB0067936F /* ProductGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridCell.swift; sourceTree = "<group>"; };
+		39F8A9FD1F1BDC5100048C7D /* ProductPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPriceCell.swift; sourceTree = "<group>"; };
+		39F8A9FF1F1BE16A00048C7D /* ProductInformationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInformationCell.swift; sourceTree = "<group>"; };
+		39F8AA011F1BE39500048C7D /* ProductSpecCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSpecCell.swift; sourceTree = "<group>"; };
+		39F8AA031F1BE4F600048C7D /* SectionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
+		39F8AA051F1BE75800048C7D /* ProductDetailsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		3A7D9BCBB337C9158E12EA07 /* Pods-JohnLewisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.release.xcconfig"; sourceTree = "<group>"; };
 		48E12C7F54CDA2E6DDE4CF4A /* Pods_JohnLewis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JohnLewis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA15458CC3E76CF444B92A7 /* Pods-JohnLewisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JohnLewisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JohnLewisTests/Pods-JohnLewisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 				395C0A011F18FBA40067936F /* ProductsNetworkAdapterTests.swift */,
 				395C0A091F19072C0067936F /* ProductsGridViewModelTests.swift */,
 				395C0A031F1905270067936F /* DishwasherTests.swift */,
+				39F8AA051F1BE75800048C7D /* ProductDetailsViewControllerTests.swift */,
 				395C09F61F18F9580067936F /* JohnLewisTests-Bridging-Header.h */,
 			);
 			path = JohnLewisTests;
@@ -174,8 +187,21 @@
 			isa = PBXGroup;
 			children = (
 				395C0A0C1F190CBB0067936F /* ProductGridCell.swift */,
+				39F8A9FC1F1BDC3600048C7D /* Product Details */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		39F8A9FC1F1BDC3600048C7D /* Product Details */ = {
+			isa = PBXGroup;
+			children = (
+				390C59891F1BCFCD00ED01BD /* ProductImageCell.swift */,
+				39F8A9FD1F1BDC5100048C7D /* ProductPriceCell.swift */,
+				39F8A9FF1F1BE16A00048C7D /* ProductInformationCell.swift */,
+				39F8AA011F1BE39500048C7D /* ProductSpecCell.swift */,
+				39F8AA031F1BE4F600048C7D /* SectionHeaderCell.swift */,
+			);
+			name = "Product Details";
 			sourceTree = "<group>";
 		};
 		B0D104CDF6C03D143B95CA48 /* Frameworks */ = {
@@ -406,12 +432,17 @@
 			files = (
 				395C0A0D1F190CBB0067936F /* ProductGridCell.swift in Sources */,
 				395C0A061F1906640067936F /* ProductsGridViewModel.swift in Sources */,
+				39F8AA041F1BE4F600048C7D /* SectionHeaderCell.swift in Sources */,
 				395C09FB1F18FA6E0067936F /* NetworkManager.swift in Sources */,
 				395C0A001F18FB1E0067936F /* Dishwasher.swift in Sources */,
+				39F8AA021F1BE39500048C7D /* ProductSpecCell.swift in Sources */,
 				395C09D71F18F8060067936F /* ProductsGridViewController.swift in Sources */,
+				39F8A9FE1F1BDC5100048C7D /* ProductPriceCell.swift in Sources */,
+				39F8AA001F1BE16A00048C7D /* ProductInformationCell.swift in Sources */,
 				395C09FD1F18FA990067936F /* ProductsNetworkAdapter.swift in Sources */,
 				395C09D51F18F8060067936F /* AppDelegate.swift in Sources */,
 				390C59881F1BA92000ED01BD /* ProductDetailsViewController.swift in Sources */,
+				390C598A1F1BCFCD00ED01BD /* ProductImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +454,7 @@
 				395C0A021F18FBA40067936F /* ProductsNetworkAdapterTests.swift in Sources */,
 				395C09F81F18F9580067936F /* ProductsGridViewControllerTests.swift in Sources */,
 				395C0A041F1905270067936F /* DishwasherTests.swift in Sources */,
+				39F8AA061F1BE75900048C7D /* ProductDetailsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
